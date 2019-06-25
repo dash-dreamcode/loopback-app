@@ -1,16 +1,13 @@
-import {AppUsersApplication} from './application';
-import {ApplicationConfig} from '@loopback/core';
+import { AppUsersApplication } from './application';
+import { ApplicationConfig } from '@loopback/core';
+import { ExpressServer } from './server';
 
-export {AppUsersApplication};
+export { ExpressServer, AppUsersApplication };
 
-export async function main(options: ApplicationConfig = {}) {
-  const app = new AppUsersApplication(options);
+export default async function main(options: ApplicationConfig = {}) {
+  const app = new ExpressServer(options);
   await app.boot();
   await app.start();
 
-  const url = app.restServer.url;
-  console.log(`Server is running at ${url}`);
-  console.log(`Try ${url}/ping`);
-
-  return app;
+  console.log(`Server is running at http://localhost:3000`);
 }
