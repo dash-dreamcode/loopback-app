@@ -56,7 +56,7 @@
     "@loopback/rest-explorer": "^1.2.1",
     "@loopback/service-proxy": "^1.2.1",
     "@types/jest": "^24.0.15",
-    "ajv": "^5.5.2",
+    "ajv": "^6.12.3",
     "ajv-error-messages": "^1.0.2",
     "ajv-errors": "^1.0.1",
     "express": "^4.17.1",
