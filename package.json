@@ -59,7 +59,7 @@
     "ajv": "^5.5.2",
     "ajv-error-messages": "^1.0.2",
     "ajv-errors": "^1.0.1",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "loopback-connector-mongodb": "^4.2.0",
     "p-event": "^4.1.0",
     "serverless-http": "^2.0.2",
